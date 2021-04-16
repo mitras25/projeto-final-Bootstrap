@@ -1,0 +1,11 @@
+.classeVermelho {
+    border: 3px solid red;
+  }
+  .classeVerde {
+    border: 3px solid rgb(3, 122, 33);
+  }
+
+  input,
+    label, select, button{
+      font-family: Roboto;
+    }

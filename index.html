@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+
+    Jquery : utilizar um que a partir de  220px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+    ----Esta na linha 33 até a linha 56
+
+
+    JavaScript: validação de cnpj 
+    --- pagina de cadastro.js linha 5 a 121
+
+    Css: Estilizar o rodapé usando exclusivamente css
+    --- pagina geral.css da linha 18 a fa-rotate-90
+
+
+    HTML: Utilizar <aside> e <article>
+    --- pagina index.html da article da linha 161 a 208, aside da 209 a 232
+
+-->
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/2c45acaf55.js" crossorigin="anonymous"></script>
+
+    <!-- Css-->
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- Fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- Javascript para Rolagem-->
+    <script type="text/javascript" src="js/rolagem/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/rolagem/scroll.js"></script>
+    <!-- Para contralar o popup de navegação-->
+    <script type="text/javascript" src="js//rolagem/banner.js"></script>
+
+
+
+    <title>Home - Seleto Açai</title>
+</head>
+
+<body>
+
+    <!-- Esta div é o popup para navegação seu css é feito em js -->
+    <div id="banner_popup" title="Navegacao">
+        <!-- Já cada href tem sua seta feita em arquivo css separado e parte aqui mesmo -->
+        <a href="#cabecalho" class="scroll">
+            <div id="BotaoScroll" style="margin: 3px;" title="Ir para Cabeçalho"></div>
+        </a>
+    </div>
+    <!--fim do popup-->
+
+    <header id="cabecalho" class="">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-success">
+
+            <!--Logo-->
+            <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" alt="logo" width="100"></a>
+            <!-- hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navegacao1" class="collapse navbar-collapse">
+
+                <!--Navegação-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="servico.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="somos.html">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedido.html">Pedido</a>
+                    </li>
+                </ul>
+                </ul>
+                <form class="form-inline">
+                    <input type="text" class="form-control" placeholder="pesquisar...">
+                    <button class="btn btn-outline-warning">ok</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-12">
+     
+                <img id="imagem2" src="imagens/fachada.JPG" width="100%" alt="">
+                         
+        </div>
+        </div>
+ 
+        <!-- Fim do banner -->
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+                    <!-- legenda -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-indicadores" data-slide-to="0"></li>
+                        <li data-target="#carousel-indicadores" data-slide-to="1"></li>
+                        <li data-target="#carousel-indicadores" data-slide-to="2"></li>
+                        <li data-target="#carousel-indicadores" data-slide-to="3"></li>
+                        <li data-target="#carousel-indicadores" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" style="height: 350px;">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="imagens/acai1.jpg" width="100%" alt="foto">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="imagens/acai2.jpg"  width="100%" alt="foto">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="imagens/acai3.jpg"  width="100%" alt="foto">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="imagens/acai4.jpg"  width="100%" alt="foto">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="imagens/acai5.jpg"  width="100%" alt="foto">
+                        </div>
+                    </div>
+                    <!--Fim div Carousel inner--> 
+                    <!--Controles  next  prev -->
+                    <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <!--Fim Carousel -->
+            </div>
+            <div class=" col-lg-6">
+                   <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-danger text-center">Cliente SELETO</h3>
+                    <h5 class="card-subtitle text-muted text-center">Vantagens de ser SELETO</h5>
+                    <p class="card-text text-justify">
+                        Sendo ciente SELETO você pode fazer seus pedidos diretamente no site com desconto de 5%,
+                        aproveitando das variadas opções disponiveis. Veja a seção de produtos e escolha sua melhor
+                        opção.
+                        <br>
+                        Nesse periodo de pandemia, oferecemos o nosso serviço de delivery.
+                        Faça hoje mesmo seu cadastro e torne-se um Cliente SELETO !!!
+                    </p>
+                    <a class="btn btn-outline-info" href="cadastro.html">Cadastre-se</a>
+                </div>
+            </div>
+            </div>       
+        </div>
+        <!-- Fim da linha 2-->
+        <div class="row my-5">
+            <article class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-danger">Açaí: como consumir</h3>
+                        <h5 class="card-subtitle text-muted">Como consumir o açaí?</h5>
+                        <p class="card-text text-justify">As formas mais refrescantes de consumir o açaí são,
+                            principalmente, por meio do suco de açaí ou açaí na tigela.
+                            O suco não precisa ser adoçado. Afinal, a polpa congelada normalmente já é adoçada. Além
+                            disso, a fruta ...
+                        </p>
+                        <a class="btn btn-outline-success"
+                            href="https://blog.livup.com.br/acai-beneficios-caracteristicas-e-como-consumir/">Continue
+                            lendo..</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-danger">Açaí: características</h3>
+                        <h5 class="card-subtitle text-muted">O que o açai tem?</h5>
+                        <p class="card-text text-justify">Primeiramente, além de ser delicioso, o açaí é uma fruta
+                            rica em carboidratos, gorduras boas, vitaminas, minerais e antioxidantes. Por isso,
+                            bastante benéfico à saúde. Conheça um pouco mais:
+                            Os carboidratos   ...
+                        </p>
+                        <a class="btn btn-outline-success"
+                            href="https://blog.livup.com.br/acai-beneficios-caracteristicas-e-como-consumir/">Continue
+                            lendo..</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-danger">Açaí: <p style="margin: 0;"></p> benefícios</h3>
+                       
+                        <h5 class="card-subtitle text-muted">Os benefícios do açai !</h5>
+                        <p class="card-text text-justify">Por conta do seu importante valor nutricional, o açaí
+                            apresentas inúmeros benefícios para a saúde e bem-estar. Entre eles, podemos destacar:
+                            É protetor do coração;
+                            Ajuda a reduzir o LDL-colesterol ...;</p>
+                        <a class="btn btn-outline-success"
+                            href="https://blog.livup.com.br/acai-beneficios-caracteristicas-e-como-consumir/">Continue
+                            lendo..</a>
+                    </div>
+                </div>
+            </article>
+            <aside class="col-lg-3">
+                <div class="card">
+                    <div class="card-header text-danger">Artigos sobre Açai</div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a
+                                href="https://blog.finamac.com/voce-conhece-quais-os-beneficios-do-acai-para-saude/">BENEFÍCIOS
+                                DO AÇAÍ PARA SAÚDE </a></li>
+                        <li class="list-group-item"><a href="http://www.acaisaude.com.br/"> Benefícios do Açaí</a>
+                        </li>
+                        <li class="list-group-item"><a
+                                href="https://www.conquistesuavida.com.br/noticia/beneficios-do-acai-saiba-por-que-e-importante-passar-a-consumir-essa-fruta_a8619/1">saiba
+                                por que é importante </a></li>
+                        <li class="list-group-item"><a href="https://www.tuasaude.com/acai/">benefícios para saúde
+                            </a></li>
+                        <li class="list-group-item"><a
+                                href="https://www.uol.com.br/vivabem/noticias/redacao/2018/10/13/beneficios-do-acai-para-a-saude-veja-como-consumir-e-se-engorda.htm">10
+                                benefícios do açaí para a saúde... </a></li>
+                        <li class="list-group-item"><a
+                                href="https://www.clickpb.com.br/blogs/click-gourmet/os-beneficios-do-acai-para-saude-do-ser-humano-203002.html">benefícios
+                                do Açaí para saúde</a></li>
+                    </ul>
+
+                </div>
+            </aside>
+        </div>
+        <!-- Fim da linha 3 -->
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <img src="imagens/banner1.png" width="100%" alt="">             
+        </div>
+
+    </main>
+    <footer>
+        <div id="rodape">
+            <div id="rodimagem">
+                <img src="imagens/slogan2.png" alt="logo" width="40%">
+            </div>
+
+            <div id="endereco">
+
+                <p>Seleto Açai</p>
+                <p>Seleto Ubajara - Avenida Monsenhor Gonçalo Eufrásio 148.</p>
+                <p>Seleto Tianguá - Ibiapaba Shopping.</p>
+                <p>Seleto São Benedito - Avenida Tabajara, 245.</p>
+            </div>
+            <div id="redesSociais">
+                <a href="https://www.facebook.com/seletoacai/?ref=page_internal">
+                    <i class="fab fa-facebook-square "></i>
+                </a>
+                <a href="https://www.instagram.com/seletoacai/">
+                    <i class="fab fa-instagram-square "></i>
+                </a>
+            </div>
+            <div id="icone">
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fab fa-whatsapp-square what"></i>
+                        </span>
+                        Ubajara (88)99431-1645
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fab fa-whatsapp-square what"></i>
+                        </span>
+                        Tianguá (88)99434-7854
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fab fa-whatsapp-square what"></i>
+                        </span>
+                        São Benedito (88)9 9732-3404
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

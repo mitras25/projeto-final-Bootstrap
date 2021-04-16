@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+    <!--Fonts e estilos-->
+    <script src="https://kit.fontawesome.com/2c45acaf55.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/geral.css" />
+    <link rel="stylesheet" href="css/cadastro.css">
+    <!-- Fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+    <title>Seleto Açai - Cadastro</title>
+</head>
+
+<body style="background-image: url(imagens/fundomadeira3.jpg);">
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-success fixed-top">
+
+            <!--Logo-->
+            <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" alt="logo" width="100"></a>
+
+            <!-- hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navegacao1" class="collapse navbar-collapse">
+
+                <!--Navegação-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="servico.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="somos.html">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedido.html">Pedido</a>
+                    </li>
+                </ul>
+                </ul>
+                <form class="form-inline">
+                    <input type="text" class="form-control" placeholder="pesquisar...">
+                    <button class="btn btn-outline-warning">ok</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="margin-top: 110px;">
+        <div class="text-center mb-3" style="color: rgba(209, 207, 209, 0.897);">
+            <h1>Cadastre-se</h1>
+            <h3>Torne-se um membro SELETO e receba várias vantagens e promoções !!!</h3>
+        </div>
+
+        <!-- formulário de inscrição começa aqui! -->
+        <div>
+            <form class="form">
+                <div id="pessoal" class="row  text-light">
+                    <div class="col-md-5 form-group">
+                        <label for="nome">Nome:</label>
+                        <input class="form-control text-capitalize" type="text" name="nome" id="nome" placeholder="Nome Completo" />
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="sexo">Sexo:</label>
+                        <select class="form-control" id="sexo" name="sexo" placeholder="Sexo">
+                            <option class="sexoCheck" value="naoInformado">Não Informado</option>
+                            <option class="sexoCheck" value="masculino">Masculino</option>
+                            <option class="sexoCheck" value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="diaNascimento">Data de Nascimento:</label>
+                        <br />
+                        <input class="form-control" name="diaNascimento" type="text"
+                            id="diaNascimento" placeholder="dd/mm/aaaa" />
+                    </div>
+                </div>
+                <!-- fim da primeira linha-->
+                <div class="row text-light">
+                    <div class="col-md-5 form-group">
+                        <label for="end">Rua/Avenida número:</label>
+                        <input class="form-control text-capitalize" type="text" name="end" id="end" placeholder="endereço completo" />
+                    </div>
+
+                    <div class="col-md-4 form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input class="form-control text-capitalize" type="cidade" name="cidade" id="cidade" placeholder="Cidade" />
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input class="form-control text-capitalize" type="text" id="bairro" nome="bairro" placeholder="Bairro" />
+                    </div>
+                </div>
+                <!--Fim da segunda linha-->
+                <div class="row text-light">
+                    <div class="col-md-4 form-group">
+                        <label for="email">Email:</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="E-mail" />
+                    </div>
+
+                    <div class="col-md-4 form-group">
+                         <label for="cpf">CPF:</label>
+                        <input class="form-control" type="text" id="cpf" nome="cpf" placeholder="xxx.xxx.xxx-xx" />
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="">.</label>
+                      <button type="button" class="btn btn-block btn-success form-control" id="botaoPessoa">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Fim do Formulário-->
+      
+
+        <img src="imagens/banner3.jpg" width="100%" alt="banner">
+
+        <div class="my-5 text-center">
+            <h1>Seja um Parceiro SELETO</h1>
+            <h3>Você empresário, quer se tornar um parceiro SELETO?</h3>
+            <h3>Cadastre-se e teremos grandes oportunidades !!!</h3>
+        </div>
+        <div>
+            <form action="" class="row mb-5">
+                <div class="form-group col-md-5">
+                    <label for="emailEmpresa">E-mail</label>
+                    <input type="email" id="emailEmpresa" class="form-control" placeholder="E-mail">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="cnpj" class="form-control" placeholder="CNPJ">
+                </div>
+                <div class="col-md-2">
+                    <label for="">.</label>
+                    <button type="button" class="btn btn-primary form-control" id="botaoEmpresa">Cadastrar</button>
+                </div> 
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="rodape">
+
+            <div id="rodimagem">
+                <img src="imagens/slogan2.png" alt="logo" width="40%">
+            </div>
+
+            <div id="endereco">
+
+                <p>Seleto Açai</p>
+                <p>Seleto Ubajara - Avenida Monsenhor Gonçalo Eufrásio 148.</p>
+                <p>Seleto Tianguá - Ibiapaba Shopping.</p>
+                <p>Seleto São Benedito - Avenida Tabajara, 245.</p>
+            </div>
+            <div id="redesSociais">
+                <a href="https://www.facebook.com/seletoacai/?ref=page_internal">
+                    <i class="fab fa-facebook-square "></i>
+                </a>
+                <a href="https://www.instagram.com/seletoacai/">
+                    <i class="fab fa-instagram-square "></i>
+                </a>
+            </div>
+            <div id="icone">
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fab fa-whatsapp-square what"></i>
+                        </span>
+                        Ubajara (88)99431-1645
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fab fa-whatsapp-square what"></i>
+                        </span>
+                        Tianguá (88)99434-7854
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fab fa-whatsapp-square what"></i>
+                        </span>
+                        São Benedito (88)9 9732-3404
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--JS -->
+    <script src="js/cadastro.js"></script>
+</body>
+
+</html>

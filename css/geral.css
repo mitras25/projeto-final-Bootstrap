@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family:Chewy;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgb(102, 0, 102);
+    background-image: url(../imagens/fundomadeira4.jpg);
+    width: 100%;
+}
+
+
+footer {
+    background-color: rgb(102, 0, 102);
+    font-family: Kalam;
+ 
+}
+
+#rodape{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#endereco{
+    width: 400px;
+  color: #fff;
+    text-align: center;   
+    align-self: center;
+}
+
+#rodimagem{
+    margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    #endereco {
+        margin: 0 auto;
+     
+    }
+  }
+
+@media only screen and (max-width: 650px) {
+    #rodimagem {
+        display: none;
+     
+    }
+  }
+
+#endereco p{
+    margin: 0px;
+
+}
+
+#redesSociais{
+    width: 80px;
+     color: #000;
+     font-size: 35px;
+    align-self: center;
+    justify-content: center;
+      margin:25px auto;
+}
+
+.fa-facebook-square,
+.fa-instagram-square{
+    color:rgba(24, 223, 24, 0.932)
+}
+
+#icone {
+  width:350px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+  @media only screen and (max-width: 1080px) {
+    #icone{
+        margin:25px auto;
+    }
+  }
+
+.fa-li{
+    color:rgba(24, 223, 24, 0.932);
+   
+}
+
+nav #navegacao1 ul li a:hover{
+    color:#fff;
+    font-weight: 700;
+}
